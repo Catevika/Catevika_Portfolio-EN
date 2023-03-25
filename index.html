@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Web Developer Portfolio from Dominique Bello">
+  <meta name="description" content="Web Developer Portfolio of Dominique Bello">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
@@ -14,11 +14,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="loader.css">
   <link rel="stylesheet" href="style.css">
   <title>Portfolio | Dominique Bello</title>
 </head>
 
 <body>
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+  </div>
   <header id="navbar">
     <nav id="menuToggle">
       <input title="Navigation menu button" type="checkbox" />
@@ -33,7 +41,18 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <button id="download-btn" type="button">CV<svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+        fill="currentColor">
+        <g>
+          <polygon points="24,37.1 13,24 35,24" />
+          <rect x="20" y="4" width="8" height="4" />
+          <rect x="20" y="10" width="8" height="4" />
+          <rect x="20" y="16" width="8" height="11" />
+          <rect x="6" y="40" width="36" height="4" />
+        </g>
+      </svg></button>
   </header>
+
   <main>
     <section id="home">
       <button title="Dark / Light theme" type="button" class="btn-toggle">
@@ -51,11 +70,12 @@
           </a>
         </div>
         <div class="card">
-          <p>Hi, my name is</p>
+          <p>Hello, my name is</p>
           <a href="#about" class="shimmer">
             <h1>Dominique Bello</h1>
           </a>
           <h2 class="animated-title"></h2>
+
           <a class="button" title="Projects" type="button" href="#projects">
             <span class="down-arrow">&darr;</span> View projects&nbsp;<span class="down-arrow">&darr;</span></a>
         </div>
@@ -67,7 +87,7 @@
 
     <section id="about">
       <div class="intro">
-        <h2>About me</h2>
+        <h2>About</h2>
         <div class="intro-text">
           <p>My name is Dominique Bello, aka Catevika.</p>
           <p>Based in Paris, France, I enjoy
@@ -76,8 +96,8 @@
         </div>
 
         <p class="intro-job-search">
-          I am actively looking for new job opportunities where I can apply my skills and experience to new challenges in web
-          development
+          I am actively looking for new job opportunities. I look forward to using my skills and experience to take on new
+          challenges as a full stack web developer
         <p>
       </div>
 
@@ -92,7 +112,7 @@
               </li>
               <li><strong>Udemy</strong>:<span>Intermediate / advanced courses</span></li>
               <li><strong>YouTube</strong>:<span>Selected Full stack Dev videos</span></li>
-              <li>Currently focusing on the <strong>MERN stack</strong>: MongoDB, Express, React and Node</li>
+              <li>Currently focusing on the <strong>MERN stack</strong>(MongoDB, Express, React and Node)</li>
             </ul>
           </div>
         </div>
@@ -119,7 +139,7 @@
             <ul>
               <li><strong>Sector</strong>:<span>Fast-Moving Consumer Goods (FMCG)</span></li>
               <li><strong>Last occupation</strong>:<span>Operations - Project manager</span></li>
-              <li><strong>Collaboration with</strong>:<span>Programmers from Bulgaria, India, UK...</span></li>
+              <li><strong>Collaboration</strong>:<span>with programmers from Bulgaria, India, UK...</span></li>
             </ul>
           </div>
         </div>
@@ -177,9 +197,9 @@
           <h4>Interests:</h4>
           <div class="card-content card-interests">
             <ul>
-              <li>Cultural tourism in Italy, my husband's country</li>
+              <li>Cultural tourism in Italy</li>
               <li>Street Art festivals</li>
-              <li>Steampunk or Art Nouveau artwork</li>
+              <li>Steampunk or Art Nouveau artworks</li>
               <li>Tech and Sci-fi movies or TV shows</li>
             </ul>
           </div>
@@ -238,7 +258,7 @@
                 1&nbsp;keyboard, 1&nbsp;mobile phone, 1&nbsp;tablet, 1&nbsp;badge for the employee gate, 1&nbsp;badge for the
                 cafeteria, 1&nbsp;Welcome ebook. Technicians
                 need a platform to manage their daily support for all this equipment.</p>
-              <p><strong>Solution</strong>: a website with 2 modules:</p>
+              <p><strong>Solution</strong>: a website with 2 modules</p>
               <ul>
                 <li>for employees who can send tickets, receive and answer notes, manage their own profile</li>
                 <li>for IT administrators who can manage products, receive tickets, send notes and manage employees profile</li>
@@ -280,10 +300,10 @@
               <p><strong>Problem</strong>: A blogger needs to illustrate her posts. She likes to navigate to Pexels.com which
                 is a free stock photos of amazing artists. She would like to spend less time selecting and downloading pictures.
               </p>
-              <p><strong>Solution</strong>: a website with 3 main features:</p>
+              <p><strong>Solution</strong>: a website with 3 main features</p>
               <ul>
                 <li>photos search by term,</li>
-                <li>display in different sizes,</li>
+                <li>display of the photos in different sizes,</li>
                 <li>protected multiple photos download, zip folder format with credits availability</li>
               </ul>
             </div>
@@ -323,15 +343,15 @@
           <div class="card">
             <h4>Overview</h4>
             <div class="card-content">
-              <p><strong>Problem</strong>: A film fan tries to develop his film culture. He likes to browse the TMDB site, but
+              <p><strong>Problem</strong>: A film fan tries to develop his film culture. He likes to browse the TMDB site, but he
                 is
                 overwhelmed by too much information.
               </p>
-              <p><strong>Solution</strong>: a website with 3 main features:</p>
+              <p><strong>Solution</strong>: a website with 3 main features</p>
               <ul>
                 <li>movie search by term,</li>
                 <li>movie details on demand,</li>
-                <li>trailers or demo videos on demand</li>
+                <li>trailers or videos on demand</li>
               </ul>
             </div>
           </div>
@@ -370,11 +390,11 @@
             <div class="card-content">
               <p><strong>Problem</strong>: A journalist likes to stay in touch with his friends while traveling around the world.
               </p>
-              <p><strong>Solution</strong>: a social website with 3 main features:</p>
+              <p><strong>Solution</strong> a social website with 3 main features:</p>
               <ul>
-                <li>publication of his own blog posts,</li>
+                <li>publication of his own blog posts with photos,</li>
                 <li>reading of friends feeds,</li>
-                <li>chat with selected friends</li>
+                <li>chat messaging with selected friends</li>
               </ul>
             </div>
           </div>
@@ -385,8 +405,9 @@
                 <li>Social app with photo download</li>
                 <li>React Context</li>
                 <li>Usage of Dummy data</li>
-                <li>Socket.io for instant messaging</li>
-                <li>Usage of 'npm audit --production' to verify create-react-app false positive vulnerabilities with 'npm audit'
+                <li>Socket.io instant messaging</li>
+                <li>Usage of 'npm audit --production' to verify if vulnerabilities detected via 'npm audit' for
+                  create-react-app are false positive or not
                 </li>
               </ul>
             </div>
@@ -398,19 +419,18 @@
 
     <section id="contact">
       <div class="intro">
-        <h2>Contact</h2>
+        <h2>Let's get in touch!</h2>
       </div>
 
       <div class="contact-container">
         <img src="assets/robot.png" alt="Hello">
 
         <div class="contact-text">
-          <h3>Get in touch!</h3>
           <ul>
-            <li>If you enjoyed my work, please feel free to share your feedback on Twitter</li>
-            <li>If you are interested in hiring me, I would appreciate if you could contact me by email</li>
+            <li>If you enjoy my work, please feel free to share your feedback on Twitter</li>
+            <li>If you are interested in my profile, for hiring me or for a collaboration, feel free to send an email</li>
           </ul>
-          <p>In any case, I will be happy to reply within 48&nbsp;hours!</p>
+          <p>In any case, I will be happy to reply within 24&nbsp;hours!</p>
         </div>
 
         <div class="contacts">
@@ -444,6 +464,7 @@
 
   </footer>
   <script src="index.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

@@ -1,4 +1,11 @@
 /*=============================================
+=              Loader                         =
+=============================================*/
+window.addEventListener("load", function () {
+  document.querySelector(".loader-wrapper").style.display = "none";
+});
+
+/*=============================================
 =            Toggle light dark themes         =
 =============================================*/
 let preferredDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark-mode" : "light-mode";
@@ -105,23 +112,31 @@ window.addEventListener('scroll', function () {
 });
 
 /*=============================================
+=            CV Download button               = =============================================*/
+const downloadBtn = document.getElementById('download-btn');
+downloadBtn.addEventListener('click', downloadFile);
+
+function downloadFile() {
+  const downloadLink = document.createElement('a');
+
+  downloadLink.href = 'assets/Dominique_Bello_CV.pdf';
+  downloadLink.download = 'Dominique_Bello_CV.pdf';
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+}
+
+/*=============================================
 =     Remix Support Desk Project Modal        =
 =============================================*/
-// Get the modal
 const modalSupport = document.getElementById("remix-support-desk");
+const btn1 = document.getElementById("modal-btn-remix");
+const span1 = document.getElementsByClassName("close")[0];
 
-// Get the button that opens the modal
-var btn1 = document.getElementById("modal-btn-remix");
-
-// Get the <span> element that closes the modal
-var span1 = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
 btn1.onclick = function () {
   modalSupport.style.display = "block";
 };
 
-// When the user clicks on <span> (x), close the modal
 span1.onclick = function () {
   modalSupport.style.display = "none";
 };
@@ -129,21 +144,14 @@ span1.onclick = function () {
 /*=============================================
 =     ShopLineArt Project Modal =
 =============================================*/
-// Get the modal
 const modalShop = document.getElementById("shoplineart");
+const btn2 = document.getElementById("modal-btn-shop");
+const span2 = document.getElementsByClassName("close")[1];
 
-// Get the button that opens the modal
-var btn2 = document.getElementById("modal-btn-shop");
-
-// Get the <span> element that closes the modal
-var span2 = document.getElementsByClassName("close")[1];
-
-// When the user clicks on the button, open the modal
 btn2.onclick = function () {
   modalShop.style.display = "block";
 };
 
-// When the user clicks on <span> (x), close the modal
 span2.onclick = function () {
   modalShop.style.display = "none";
 };
@@ -151,21 +159,14 @@ span2.onclick = function () {
 /*=============================================
 =     MovieMania Project Modal               =
 =============================================*/
-// Get the modal
 const modalMovie = document.getElementById("movie-mania");
+const btn3 = document.getElementById("modal-btn-movie");
+const span3 = document.getElementsByClassName("close")[2];
 
-// Get the button that opens the modal
-var btn3 = document.getElementById("modal-btn-movie");
-
-// Get the <span> element that closes the modal
-var span3 = document.getElementsByClassName("close")[2];
-
-// When the user clicks on the button, open the modal
 btn3.onclick = function () {
   modalMovie.style.display = "block";
 };
 
-// When the user clicks on <span> (x), close the modal
 span3.onclick = function () {
   modalMovie.style.display = "none";
 };
@@ -173,26 +174,18 @@ span3.onclick = function () {
 /*=============================================
 =     Social Media Project Modal               =
 =============================================*/
-// Get the modal
 const modalSocial = document.getElementById("social-media");
+const btn4 = document.getElementById("modal-btn-social");
+const span4 = document.getElementsByClassName("close")[3];
 
-// Get the button that opens the modal
-var btn4 = document.getElementById("modal-btn-social");
-
-// Get the <span> element that closes the modal
-var span4 = document.getElementsByClassName("close")[3];
-
-// When the user clicks on the button, open the modal
 btn4.onclick = function () {
   modalSocial.style.display = "block";
 };
 
-// When the user clicks on <span> (x), close the modal
 span4.onclick = function () {
   modalSocial.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modalSupport) {
     modalSupport.style.display = "none";
