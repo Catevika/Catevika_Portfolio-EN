@@ -777,6 +777,15 @@ a.scroll-down {
   box-shadow: var(--shadow);
 }
 
+#download-btn:hover {
+  background-color: var(--cyan-gold-25);
+  cursor: pointer;
+}
+
+#download-btn:focus-visible {
+  outline: 1px solid var(--white);
+}
+
 #download-btn svg {
   color: var(--gold);
   margin-left: 5px;
@@ -964,6 +973,11 @@ a.scroll-down {
 #shoplineart .card-content ul,
 #movie-mania .card-content ul,
 #social-media .card-content ul {
+  width: 100%;
+}
+
+video {
+  margin: 20px 0 40px 0;
   width: 100%;
 }
 

@@ -112,15 +112,17 @@ window.addEventListener('scroll', function () {
 });
 
 /*=============================================
-=            CV Download button               = =============================================*/
+=            CV Download button               =
+=============================================*/
 const downloadBtn = document.getElementById('download-btn');
 downloadBtn.addEventListener('click', downloadFile);
 
+// TODO Change files FR & EN
 function downloadFile() {
   const downloadLink = document.createElement('a');
 
-  downloadLink.href = 'assets/Dominique_Bello_CV.pdf';
-  downloadLink.download = 'Dominique_Bello_CV.pdf';
+  downloadLink.href = 'assets/Dominique_Bello_CV-EN.pdf';
+  downloadLink.download = 'Dominique_Bello_CV-EN.pdf';
   document.body.appendChild(downloadLink);
   downloadLink.click();
   document.body.removeChild(downloadLink);
