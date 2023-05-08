@@ -775,7 +775,7 @@ a.scroll-down {
   border-radius: var(--border-radius);
   border: 1px solid var(--gold);
   box-shadow: var(--shadow);
-  z-index: 500;
+  z-index: 600;
 }
 
 #download-btn:hover {
