@@ -1030,6 +1030,16 @@ video {
   justify-content: center;
 }
 
+#contact .contact-text ul li svg {
+  display: inline;
+  height: 1rem;
+  width: 1rem;
+}
+
+#contact .contact-text ul li svg path {
+  fill: var(--gold);
+}
+
 /*===================================
 =       Social links                =
 ===================================*/
