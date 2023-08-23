@@ -18,6 +18,7 @@ body.dark-mode {
   --github: hsl(210, 32%, 85%);
 
   --border-radius: 7px;
+  --border-radius-round: 50%;
 
   --shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.15),
     3px 3px 5px hsla(0, 0%, 0%, 0.4);
@@ -579,15 +580,17 @@ a.scroll-down {
 
 #home .profile-img {
   width: 200px;
-  border-radius: var(--border-radius);
+  aspect-ratio: 1/1;
+  border-radius: var(--border-radius-round);
   background-color: var(--ultra-night-50);
+  background-size: cover;
   -webkit-filter: drop-shadow(var(--shadow-img));
   filter: drop-shadow(var(--shadow-img));
 }
 
 #home .contact-img {
   width: 120px;
-  margin: -80px 0 0 80px;
+  margin: -38px 0 0 80px;
   border-radius: 50%;
   -webkit-filter: drop-shadow(var(--shadow-img));
   filter: drop-shadow(var(--shadow-img));
