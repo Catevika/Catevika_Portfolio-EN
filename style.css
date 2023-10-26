@@ -663,12 +663,12 @@ a.scroll-down {
 @-webkit-keyframes change-content {
   0% {
     opacity: 0;
-    content: "Full Stack Web Developer";
+    content: "Frontend Web Developer";
   }
 
   20% {
     opacity: 1;
-    content: "Full Stack Web Developer";
+    content: "Frontend Web Developer";
   }
 
   21% {
@@ -715,12 +715,12 @@ a.scroll-down {
 @keyframes change-content {
   0% {
     opacity: 0;
-    content: "Full Stack Web Developer";
+    content: "Frontend Web Developer";
   }
 
   20% {
     opacity: 1;
-    content: "Full Stack Web Developer";
+    content: "Frontend Web Developer";
   }
 
   21% {
@@ -804,7 +804,7 @@ a.scroll-down {
 
 #home .card .animated-title::after {
   position: absolute;
-  content: 'Full Stack Web Developer';
+  content: 'Frontend Web Developer';
   left: 0;
   -webkit-animation: change-content 10s linear 2;
   animation: change-content 10s linear 2;
